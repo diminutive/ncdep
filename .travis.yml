@@ -5,6 +5,7 @@ warnings_are_errors: true
 sudo: false
 cache: packages
 
+
 addons:
     apt:
         packages:
@@ -47,7 +48,7 @@ notifications:
 
 r_binary_packages:
   - ncdf4
-  
+
 after_success:
   - Rscript -e 'covr::codecov()'
 
