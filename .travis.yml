@@ -17,10 +17,15 @@ matrix:
         - os: linux
           r: release
           dist: trusty # 14.04
-          env: R_CODECOV=true
-          #- os: linux
-          #r: devel
-          #dist: trusty
+          env:
+           - BUILD_NAME=trusty_release
+           - DETAILS="release build"
+        - os: linux
+          r: devel
+          dist: trusty
+          env:
+           - BUILD_NAME=trusty_devel
+           - DETAILS="devel build"
         - os: linux
           r: oldrel
           dist: trusty
@@ -32,8 +37,11 @@ matrix:
           env:
            - BUILD_NAME=osx_release
            - DETAILS="release build"
-          #- os: osx
-          #r: devel
+        - os: osx
+          r: devel
+          env:
+           - BUILD_NAME=osx_devel
+           - DETAILS="devel build"
 
 # r-devel temporarily switched off; see
 # https://www.mail-archive.com/r-devel@r-project.org/msg38248.html
@@ -46,8 +54,6 @@ notifications:
 #r_github_packages:
 #      - jimhester/covr
 
-r_binary_packages:
-  - ncdf4
 
 after_success:
   - Rscript -e 'covr::codecov()'
