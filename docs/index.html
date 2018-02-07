@@ -58,7 +58,12 @@
 <div id="ncdep" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#ncdep" class="anchor"></a>ncdep</h1></div>
-<p>The goal of ncdep is to build this matrix of build tests.</p>
+<p>The goal of ncdep is to build these matrixes of build tests.</p>
+<p>Use branches to isolate specific functionality, since it will run on Linux, MacOS, and Windows - with some architecture and environment options.</p>
+<div id="installing-ncdf4-and-rnetcdf" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installing-ncdf4-and-rnetcdf" class="anchor"></a>Installing ncdf4 and RNetCDF</h2>
+<p>This is purely including these packages as Imports, there’s no code that runs.</p>
 <table class="table">
 <thead><tr class="header">
 <th>Environment</th>
@@ -67,14 +72,121 @@
 <tbody>
 <tr class="odd">
 <td>Ubuntu 14.04 64 bit</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=master&amp;env=BUILD_NAME=trusty_release&amp;label=trusty_release" alt="Build Status"></a></td>
+</tr>
+<tr class="even">
+<td>Ubuntu 14.04 64 bit</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=master&amp;env=BUILD_NAME=trusty_devel&amp;label=trusty_devel" alt="Build Status"></a></td>
+</tr>
+<tr class="odd">
+<td>Ubuntu 14.04 64 bit</td>
 <td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=master&amp;env=BUILD_NAME=trusty_oldrel&amp;label=trusty_oldrel" alt="Build Status"></a></td>
 </tr>
 <tr class="even">
 <td>MacOS X</td>
 <td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=master&amp;env=BUILD_NAME=osx_release&amp;label=osx_release" alt="Build Status"></a></td>
 </tr>
+<tr class="odd">
+<td>MacOS X</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=master&amp;env=BUILD_NAME=osx_devel&amp;label=osx_devel" alt="Build Status"></a></td>
+</tr>
+<tr class="even">
+<td>MacOS X</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=master&amp;env=BUILD_NAME=osx_oldrel&amp;label=osx_oldrel" alt="Build Status"></a></td>
+</tr>
+<tr class="odd">
+<td>Windows release and devel, 64-bit and 32-bit</td>
+<td align="center"><a href="https://ci.appveyor.com/project/mdsumner/ncdep"><img src="https://ci.appveyor.com/api/projects/status/github/dis-organization/ncdep?branch=master&amp;svg=true" alt="AppVeyor Build Status"></a></td>
+</tr>
 </tbody>
 </table>
+<p>Please note that Appveyor cannot distinguish the different builds at this badge level, but it might soon.</p>
+<p><a href="https://help.appveyor.com/discussions/questions/16443-status-badge-per-matrix-build" class="uri">https://help.appveyor.com/discussions/questions/16443-status-badge-per-matrix-build</a></p>
+<p>Below, use different branches to test different features.</p>
+</div>
+<div id="installing-and-running-ncdf4-for-opendap" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installing-and-running-ncdf4-for-opendap" class="anchor"></a>Installing and running ncdf4 for OpenDAP</h2>
+<p>In this case we run a test that expects to get a <code>ncdf4</code> object from 1) a local file and 2) a Thredds server.</p>
+<table class="table">
+<thead><tr class="header">
+<th>Environment</th>
+<th align="center">Status</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Ubuntu 14.04 64 bit</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&amp;env=BUILD_NAME=trusty_release&amp;label=trusty_release" alt="Build Status"></a></td>
+</tr>
+<tr class="even">
+<td>Ubuntu 14.04 64 bit</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&amp;env=BUILD_NAME=trusty_devel&amp;label=trusty_devel" alt="Build Status"></a></td>
+</tr>
+<tr class="odd">
+<td>Ubuntu 14.04 64 bit</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&amp;env=BUILD_NAME=trusty_oldrel&amp;label=trusty_oldrel" alt="Build Status"></a></td>
+</tr>
+<tr class="even">
+<td>MacOS X</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&amp;env=BUILD_NAME=osx_release&amp;label=osx_release" alt="Build Status"></a></td>
+</tr>
+<tr class="odd">
+<td>MacOS X</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&amp;env=BUILD_NAME=osx_devel&amp;label=osx_devel" alt="Build Status"></a></td>
+</tr>
+<tr class="even">
+<td>MacOS X</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&amp;env=BUILD_NAME=osx_oldrel&amp;label=osx_oldrel" alt="Build Status"></a></td>
+</tr>
+<tr class="odd">
+<td>Windows release and devel, 64-bit and 32-bit</td>
+<td align="center"><a href="https://ci.appveyor.com/project/mdsumner/ncdep"><img src="https://ci.appveyor.com/api/projects/status/github/dis-organization/ncdep?branch=ncdf4-opendap&amp;svg=true" alt="AppVeyor Build Status"></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="installing-and-running-rnetcdf-for-opendap" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installing-and-running-rnetcdf-for-opendap" class="anchor"></a>Installing and running RNetCDF for OpenDAP</h2>
+<p>Same again, expect to get a <code>NetCDF</code> object from 1) a local file and 2) a Thredds server.</p>
+<p>We will definitely fail on 32-bit Windows, so we will turn that off in this branch - click through to Appveyor to see the success/fail set.</p>
+<table class="table">
+<thead><tr class="header">
+<th>Environment</th>
+<th align="center">Status</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>Ubuntu 14.04 64 bit</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&amp;env=BUILD_NAME=trusty_release&amp;label=trusty_release" alt="Build Status"></a></td>
+</tr>
+<tr class="even">
+<td>Ubuntu 14.04 64 bit</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&amp;env=BUILD_NAME=trusty_devel&amp;label=trusty_devel" alt="Build Status"></a></td>
+</tr>
+<tr class="odd">
+<td>Ubuntu 14.04 64 bit</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&amp;env=BUILD_NAME=trusty_oldrel&amp;label=trusty_oldrel" alt="Build Status"></a></td>
+</tr>
+<tr class="even">
+<td>MacOS X</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&amp;env=BUILD_NAME=osx_release&amp;label=osx_release" alt="Build Status"></a></td>
+</tr>
+<tr class="odd">
+<td>MacOS X</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&amp;env=BUILD_NAME=osx_devel&amp;label=osx_devel" alt="Build Status"></a></td>
+</tr>
+<tr class="even">
+<td>MacOS X</td>
+<td align="center"><a href="https://travis-ci.org/dis-organization/ncdep"><img src="http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&amp;env=BUILD_NAME=osx_oldrel&amp;label=osx_oldrel" alt="Build Status"></a></td>
+</tr>
+<tr class="odd">
+<td>Windows release and devel, 64-bit and 32-bit</td>
+<td align="center"><a href="https://ci.appveyor.com/project/mdsumner/ncdep"><img src="https://ci.appveyor.com/api/projects/status/github/dis-organization/ncdep?branch=RNetCDF-opendap&amp;svg=true" alt="AppVeyor Build Status"></a></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
   </div>
