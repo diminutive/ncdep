@@ -30,6 +30,16 @@ environment:
     BUILD_NAME: i386_release
     DETAILS: release_build
 
+  - R_VERSION: devel
+    R_ARCH: x64
+    BUILD_NAME: x64_devel
+    DETAILS: devel_build
+
+  - R_VERSION: devel
+    R_ARCH: i386
+    BUILD_NAME: i386_devel
+    DETAILS: devel_build
+
 build_script:
   - travis-tool.sh install_deps
 
