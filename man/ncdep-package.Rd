@@ -8,7 +8,7 @@
 \alias{ncdep}
 \title{ncdep: Test NetCDF on Travis and Appveyor}
 \description{
-What the package does (one paragraph).
+Deploy tests to Travis and Appveyor.
 
 NetCDF dependencies
 }

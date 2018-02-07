@@ -27,6 +27,6 @@ NULL
 #' @name oceandata_dap
 #' @docType data
 #' @examples
-#' x1 <- ncdf4::nc_open(oceandata_dap)
-#' x2 <- RNetCDF::open.nc(oceandata_dap)
+#' #x1 <- ncdf4::nc_open(oceandata_dap)
+#' #x2 <- RNetCDF::open.nc(oceandata_dap)
 NULL
