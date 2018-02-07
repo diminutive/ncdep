@@ -11,6 +11,7 @@ addons:
         packages:
             - libudunits2-dev
             - libnetcdf-dev
+            - netcdf-bin
 
 matrix:
     include:
