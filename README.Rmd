@@ -14,7 +14,13 @@ knitr::opts_chunk$set(
 ```
 # ncdep
 
-The goal of ncdep is to build this matrix of build tests. 
+The goal of ncdep is to build these matrixes of build tests. 
+
+Use branches to isolate specific functionality, since it will run on Linux, MacOS, and Windows - with some architecture and environment options. 
+
+## Installing ncdf4 and RNetCDF
+
+This is purely including these packages as Imports, there's no code that runs. 
 
 | Environment              | Status        |
 | ------------------------ |:-------------:|
@@ -27,5 +33,40 @@ The goal of ncdep is to build this matrix of build tests.
 | Windows  release and devel, 64-bit and 32-bit | [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/dis-organization/ncdep?branch=master&svg=true)](https://ci.appveyor.com/project/mdsumner/ncdep)  |
 
 
+Please note that Appveyor cannot distinguish the different builds at this badge level, but it might soon. 
 
+https://help.appveyor.com/discussions/questions/16443-status-badge-per-matrix-build
+
+
+Below, use different branches to test different features. 
+
+## Installing and running ncdf4 for OpenDAP
+
+In this case we run a test that expects to get a `ncdf4` object from 1) a local file and 2) a Thredds server. 
+
+| Environment              | Status        |
+| ------------------------ |:-------------:|
+| Ubuntu 14.04 64 bit      | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&env=BUILD_NAME=trusty_release&label=trusty_release)](https://travis-ci.org/dis-organization/ncdep) |
+| Ubuntu 14.04 64 bit      | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&env=BUILD_NAME=trusty_devel&label=trusty_devel)](https://travis-ci.org/dis-organization/ncdep) |
+| Ubuntu 14.04 64 bit     | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&env=BUILD_NAME=trusty_oldrel&label=trusty_oldrel)](https://travis-ci.org/dis-organization/ncdep) |
+| MacOS X                  | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&env=BUILD_NAME=osx_release&label=osx_release)](https://travis-ci.org/dis-organization/ncdep) |
+| MacOS X                  | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&env=BUILD_NAME=osx_devel&label=osx_devel)](https://travis-ci.org/dis-organization/ncdep) |
+| MacOS X                  | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=ncdf4-opendap&env=BUILD_NAME=osx_oldrel&label=osx_oldrel)](https://travis-ci.org/dis-organization/ncdep) |
+| Windows  release and devel, 64-bit and 32-bit | [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/dis-organization/ncdep?branch=ncdf4-opendap&svg=true)](https://ci.appveyor.com/project/mdsumner/ncdep)  |
+
+## Installing and running RNetCDF for OpenDAP
+
+
+Same again, expect to get a  `NetCDF` object from 1) a local file and 2) a Thredds server. 
+
+
+| Environment              | Status        |
+| ------------------------ |:-------------:|
+| Ubuntu 14.04 64 bit      | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&env=BUILD_NAME=trusty_release&label=trusty_release)](https://travis-ci.org/dis-organization/ncdep) |
+| Ubuntu 14.04 64 bit      | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&env=BUILD_NAME=trusty_devel&label=trusty_devel)](https://travis-ci.org/dis-organization/ncdep) |
+| Ubuntu 14.04 64 bit     | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&env=BUILD_NAME=trusty_oldrel&label=trusty_oldrel)](https://travis-ci.org/dis-organization/ncdep) |
+| MacOS X                  | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&env=BUILD_NAME=osx_release&label=osx_release)](https://travis-ci.org/dis-organization/ncdep) |
+| MacOS X                  | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&env=BUILD_NAME=osx_devel&label=osx_devel)](https://travis-ci.org/dis-organization/ncdep) |
+| MacOS X                  | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&env=BUILD_NAME=osx_oldrel&label=osx_oldrel)](https://travis-ci.org/dis-organization/ncdep) |
+| Windows  release and devel, 64-bit and 32-bit | [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/dis-organization/ncdep?branch=RNetCDF-opendap&svg=true)](https://ci.appveyor.com/project/mdsumner/ncdep)  |
 
