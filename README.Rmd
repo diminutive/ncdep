@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 ```
 # ncdep
 
-The goal of ncdep is to ...
+The goal of ncdep is to build this matrix of build tests. 
 
 | Environment              | Status        |
 | ------------------------ |:-------------:|
