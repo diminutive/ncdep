@@ -15,7 +15,7 @@ cache:
 
 # Adapt as necessary starting from here
 
-  matrix:
+matrix:
   - R_VERSION: release
     R_ARCH: x64
     env:
