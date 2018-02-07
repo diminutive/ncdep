@@ -8,6 +8,6 @@
 The URL of an ocean colour NetCDF file behind a Thredds server.
 }
 \examples{
-x1 <- ncdf4::nc_open(oceandata_dap)
-x2 <- RNetCDF::open.nc(oceandata_dap)
+#x1 <- ncdf4::nc_open(oceandata_dap)
+#x2 <- RNetCDF::open.nc(oceandata_dap)
 }
