@@ -22,15 +22,13 @@ environment:
   matrix:
   - R_VERSION: release
     R_ARCH: x64
-    env:
-       - BUILD_NAME=x64_release
-       - DETAILS="release build"
+    BUILD_NAME=x64_release
+    DETAILS="release build"
 
   - R_VERSION: release
     R_ARCH: i386
-    env:
-       - BUILD_NAME=i386_release
-       - DETAILS="release build"
+    BUILD_NAME=i386_release
+    DETAILS="release build"
 
 build_script:
   - travis-tool.sh install_deps
