@@ -33,15 +33,20 @@ matrix:
            - BUILD_NAME=trusty_oldrel
            - DETAILS="oldrel build"
         - os: osx
+          r: oldrel
+          env:
+           - BUILD_NAME=osx_oldrel
+           - DETAILS="oldrel build"
+        - os: osx
           r: release
           env:
            - BUILD_NAME=osx_release
            - DETAILS="release build"
-        #- os: osx
-        #  r: devel
-        #  env:
-        #   - BUILD_NAME=osx_devel
-        #   - DETAILS="devel build"
+        - os: osx
+          r: devel
+          env:
+           - BUILD_NAME=osx_devel
+           - DETAILS="devel build"
 
 # r-devel temporarily switched off; see
 # https://www.mail-archive.com/r-devel@r-project.org/msg38248.html
