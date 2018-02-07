@@ -48,6 +48,8 @@ Installing and running RNetCDF for OpenDAP
 
 Same again, expect to get a `NetCDF` object from 1) a local file and 2) a Thredds server.
 
+We will definitely fail on 32-bit Windows, so we will turn that off in this branch - click through to Appveyor to see the success/fail set.
+
 | Environment                                  |                                                                                                Status                                                                                                |
 |----------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | Ubuntu 14.04 64 bit                          | [![Build Status](http://badges.herokuapp.com/travis/dis-organization/ncdep?branch=RNetCDF-opendap&env=BUILD_NAME=trusty_release&label=trusty_release)](https://travis-ci.org/dis-organization/ncdep) |

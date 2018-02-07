@@ -59,6 +59,7 @@ In this case we run a test that expects to get a `ncdf4` object from 1) a local 
 
 Same again, expect to get a  `NetCDF` object from 1) a local file and 2) a Thredds server. 
 
+We will definitely fail on 32-bit Windows, so we will turn that off in this branch - click through to Appveyor to see the success/fail set. 
 
 | Environment              | Status        |
 | ------------------------ |:-------------:|
